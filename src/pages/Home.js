@@ -20,8 +20,6 @@ const featureTextSecurity =
 
 export default function Index() {
   document.title = 'Argent Bank - Home Page'
-
-
   return (
     <>
       <Topbar />
