@@ -1,5 +1,5 @@
 import './LoginForm.css'
-import { useNavigate } from 'react-router'
+//import { useNavigate } from 'react-router'
 
 export default function LoginForm() {
   
@@ -14,7 +14,7 @@ export default function LoginForm() {
           <input
             type="text"
             value=""
-            onChange=""
+            onChange={console.log('username')}
             required
           />
         </div>
@@ -23,7 +23,7 @@ export default function LoginForm() {
           <input
             type="password"
             value=""
-            onChange=""
+            onChange={console.log('password')}
             required
           />
         </div>

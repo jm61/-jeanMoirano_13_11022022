@@ -1,10 +1,9 @@
 import logo from '../assets/argentBankLogo.png'
 import { Link } from 'react-router-dom'
-import { useNavigate } from 'react-router-dom'
 import './Topbar.css'
 
 export default function Topbar() {
-  let navigate = useNavigate()
+
 
   return (
     <nav className="main-nav">
