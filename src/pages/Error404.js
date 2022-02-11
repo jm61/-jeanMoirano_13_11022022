@@ -6,7 +6,8 @@ import {Link} from 'react-router-dom'
  * Error 404 page rendering
  * @returns {JSX}
  */
-export const Error404 = () => {
+const Error404 = () => {
+  document.title = 'Argent Bank - Error Page'
   return (
    <div>
        <img src={logo} alt="logo" />
@@ -16,3 +17,4 @@ export const Error404 = () => {
 
   )
 }
+export default Error404
