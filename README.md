@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# A propos
+Projet 13 - Utilisez une API pour un compte utilisateur bancaire avec React
+- Remede Agency : Spécialisée dans le développement d'application web
+- Projet : Nouvelle banque Argent Bank
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Fonction
+- Développeur web
 
-## Available Scripts
+✅
+❌
 
-In the project directory, you can run:
+### Details du projet
+Argent Bank essai de percer dans le secteur et a besoin d'aide pour mettre en place son application web React pour le nouveau système d'authentification des utilisateurs.
 
-### `npm start`
+### Objectif
+- Phase 1 : Authentification et gestions des utilisateurs via une application web
+- Phase 2 : Transactions / Spécifications de endpoints d'API pour une deuxime mission
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Ressource
+- [HTML statisque et le CSS : Page d'accueil / connexion et page de profil](https://github.com/OpenClassrooms-Student-Center/Project-10-Bank-API/tree/master/designs)
+- [Modèles de GitHub issues](https://github.com/OpenClassrooms-Student-Center/Project-10-Bank-API/tree/master/.github/ISSUE_TEMPLATE)
+- [Forker du Repo](https://github.com/OpenClassrooms-Student-Center/Project-10-Bank-API)
+- [Documentation Swagger](https://editor.swagger.io/)
+- [Cours Redux](https://openclassrooms.com/fr/courses/5511091-organisez-votre-application-avec-la-logique-redux)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Contraintes techniques
+- Créer une application web responsive avec React
+- Utiliser Redux pour gérer le state de l'ensemble de l'app
+- Code Robuste / Lisible
+- Version moderne (ES6 ou supérieure) de JavaScript
+- Validation W3C sans erreur
 
-### `npm test`
+### Livrable
+- Le lien du repository Github
+- Le code React du projet 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Contact / Avery Moreau VP Engineering Argent Bank
 
-### `npm run build`
+> Phase 1
+- L'utilisateur peut visiter la page d'accueil ✅
+- L'utilisateur peut se connecter / déconnecter au sytème ✅
+- L'utilisateur ne peut voir les informations relatives à son propre profil qu'après s'être connecté avec succès ✅
+- L'utilisateur peut modifier le profil et conserver les données dans la base de données ✅
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+> Phase 2
+- L'utilisateur peut visualiser toutes leurs transactions pour le mois en cours
+- L'utilisateur peut visualiser les détails d'une transaction d'une autre vue
+- L'utilisateur peut ajouter, modifier, supprimer des informations sur une transaction
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+> Spécification décrivant les API pour les transactions selon directives de swagger YAML
+- La metode HTTP (ex: GET, POST, etc..)
+- La route (ex: /store/inventory)
+- La description de ce à quoi correspond l'endpoint (ex: Retour de l'inventaire des animaux de compagnie)
+- Les paramètres possibles pour tenir compte des différents scénarios
+- Les différentes réponses avec les codes de réponse correspondants qui ont un sens pour cet endpoint (ex: 404 : réponse d'erreur d'article inconnu)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Technlogies
+HTML, CSS, SASS, Javascript, Jquery, NodeJS, React, Github, Heroku, API, Swagger
 
-### `npm run eject`
+### Hébergement
+> Heroku
+[#Projet 13 - Argent Bank](https://google.fr/)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# React Express Starter Pack
+> full stack apps with React and Express. Run your client and server with a single command. 
+[React, Redux, API, SCSS, Heroku, starter](https://github.com/GrimonprezAlexis/React-custom-starter)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Quick Start
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+``` bash
+# Install dependencies for server
+npm install
 
-## Learn More
+# Install dependencies for client
+npm run client-install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Run the client & server with concurrently
+npm run dev
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Run the Express server only
+npm run server
 
-### Code Splitting
+# Run the React client only
+npm run client
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# Server runs on http://localhost:5000 and client on http://localhost:3000
+```
 
-### Analyzing the Bundle Size
+### Author
+[Alexis GRIMONPREZ](grimonprez-alexis.herokuapp.com)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Version
+1.0.0

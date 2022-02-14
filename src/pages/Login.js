@@ -2,7 +2,7 @@ import Footer from '../components/Footer'
 import Topbar from '../components/Topbar'
 import LoginForm from '../components/LoginForm'
 
-export default function SignIn() {
+const SignIn = () => {
   document.title = 'Argent Bank - Login'
   return (
     <>
@@ -14,3 +14,4 @@ export default function SignIn() {
     </>
   )
 }
+export default SignIn

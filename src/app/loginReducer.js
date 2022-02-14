@@ -8,6 +8,14 @@ const INITIAL_STATE = {
 }
 
 export const loginReducer = (state = INITIAL_STATE, action) => {
-  
+  switch (action.type) {
+    case USER_LOGIN_SUCCESS:
+      return { isLogged: true, token: action.payload.body.token }
+    case USER_LOGIN_FAIL:
+      return { isLogged: false, token: null, error: action.payload }
+    case USER_LOGOUT:
+      return { isLogged: false, token: null }
+    default:
       return state
   }
+}

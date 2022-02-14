@@ -18,7 +18,7 @@ const featureTextMoney =
 const featureTextSecurity =
     'We use top of the line encryption to make sure your data and money is always safe.'
 
-export default function Index() {
+const Index = () => {
   document.title = 'Argent Bank - Home Page'
   return (
     <>
@@ -47,3 +47,4 @@ export default function Index() {
     </>
   )
 }
+export default Index

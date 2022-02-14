@@ -1,13 +1,13 @@
 import logo from '../assets/argentBankLogo.png'
 import {Link} from 'react-router-dom'
 
-
 /**
  * Error 404 page rendering
  * @returns {JSX}
  */
 const Error404 = () => {
   document.title = 'Argent Bank - Error Page'
+
   return (
    <div>
        <img src={logo} alt="logo" />
