@@ -4,20 +4,19 @@ import thunk from 'redux-thunk'
 import { loginReducer } from './loginReducer'
 import { userReducer } from './userReducer'
 import { persistStore, persistReducer } from 'redux-persist'
-import storage from 'redux-persist/lib/storage'
-import sessionStorage from 'redux-persist/lib/storage'
+import sessionStorage from 'redux-persist/lib/storage/session'
 
 const rootReducer = combineReducers({
   userLogin: loginReducer,
   userProfile: userReducer,
 })
 
-const persistConfig = {
+const authPersistConfig = {
   key: 'root',
-  storage,
+  storage: sessionStorage,
 }
 
-const persistedReducer = persistReducer(persistConfig, rootReducer)
+const persistedReducer = persistReducer(authPersistConfig, rootReducer)
 
 const store = createStore(
   persistedReducer,

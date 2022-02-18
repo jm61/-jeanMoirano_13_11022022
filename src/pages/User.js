@@ -2,6 +2,7 @@
 import Footer from '../components/Footer'
 import Topbar from '../components/Topbar'
 import Accounts from '../components/Accounts'
+import UserHeader from '../components/UserHeader'
 import { useNavigate } from 'react-router'
 import { useSelector } from 'react-redux'
 import { useEffect } from 'react'
@@ -23,6 +24,7 @@ const User = () => {
     <>
       <Topbar />
       <main className="main bg-dark bg-padding">
+      <UserHeader />
         <h2 className="sr-only">Accounts</h2>
         <Accounts
           title="Argent Bank Checking (x8349)"

@@ -1,74 +1,55 @@
-# A propos
-Projet 13 - Utilisez une API pour un compte utilisateur bancaire avec React
-- Remede Agency : Spécialisée dans le développement d'application web
-- Projet : Nouvelle banque Argent Bank
+# About
+Project #13 - Using an API to log on a banking user with React and Redux
 
-### Fonction
-- Développeur web
+### Features
+Argent Bank is trying to break into the industry and needs help setting up its React web application for the new user authentication system.
 
-✅
-❌
+### Objective
+- Phase 1: Authentication and user management via a web application
+- Phase 2: Transactions / API endpoint specifications for a second   mission
 
-### Details du projet
-Argent Bank essai de percer dans le secteur et a besoin d'aide pour mettre en place son application web React pour le nouveau système d'authentification des utilisateurs.
-
-### Objectif
-- Phase 1 : Authentification et gestions des utilisateurs via une application web
-- Phase 2 : Transactions / Spécifications de endpoints d'API pour une deuxime mission
-
-### Ressource
-- [HTML statisque et le CSS : Page d'accueil / connexion et page de profil](https://github.com/OpenClassrooms-Student-Center/Project-10-Bank-API/tree/master/designs)
-- [Modèles de GitHub issues](https://github.com/OpenClassrooms-Student-Center/Project-10-Bank-API/tree/master/.github/ISSUE_TEMPLATE)
-- [Forker du Repo](https://github.com/OpenClassrooms-Student-Center/Project-10-Bank-API)
-- [Documentation Swagger](https://editor.swagger.io/)
-- [Cours Redux](https://openclassrooms.com/fr/courses/5511091-organisez-votre-application-avec-la-logique-redux)
+### Ressources
+- [HTML static and CSS : Home Page / login and profile pages](https://github.com/OpenClassrooms-Student-Center/Project-10-Bank-API/tree/master/designs)
+- [GitHub issues list](https://github.com/OpenClassrooms-Student-Center/Project-10-Bank-API/tree/master/.github/ISSUE_TEMPLATE)
+- [Repo to fork](https://github.com/OpenClassrooms-Student-Center/Project-10-Bank-API)
+- [Swagger Documentation](https://editor.swagger.io/)
+- [Redux courses](https://openclassrooms.com/fr/courses/5511091-organisez-votre-application-avec-la-logique-redux)
 
 ### Contraintes techniques
-- Créer une application web responsive avec React
-- Utiliser Redux pour gérer le state de l'ensemble de l'app
-- Code Robuste / Lisible
-- Version moderne (ES6 ou supérieure) de JavaScript
-- Validation W3C sans erreur
+- Create a responsive web application with React
+- Use Redux to manage the state of the whole app
+- Robust / Readable Code
+- Modern version (ES6 or higher) of JavaScript
+- Error-free W3C validation 
+  
 
-### Livrable
-- Le lien du repository Github
-- Le code React du projet 
+### Deliverable
+- Github repository link
+- The React code of the project
 
 - Contact / Avery Moreau VP Engineering Argent Bank
 
 > Phase 1
-- L'utilisateur peut visiter la page d'accueil ✅
-- L'utilisateur peut se connecter / déconnecter au sytème ✅
-- L'utilisateur ne peut voir les informations relatives à son propre profil qu'après s'être connecté avec succès ✅
-- L'utilisateur peut modifier le profil et conserver les données dans la base de données ✅
+- User can visit homepage ✅
+- User can login / logout to the system ✅
+- User can only see their own profile information after successfully logging in ✅
+- User can edit profile and keep data in database ✅
 
 > Phase 2
-- L'utilisateur peut visualiser toutes leurs transactions pour le mois en cours
-- L'utilisateur peut visualiser les détails d'une transaction d'une autre vue
-- L'utilisateur peut ajouter, modifier, supprimer des informations sur une transaction
+- User can view all their transactions for the current month
+- User can view details of a transaction from another view
+- User can add, modify, delete information about a transaction
 
-> Spécification décrivant les API pour les transactions selon directives de swagger YAML
-- La metode HTTP (ex: GET, POST, etc..)
-- La route (ex: /store/inventory)
-- La description de ce à quoi correspond l'endpoint (ex: Retour de l'inventaire des animaux de compagnie)
-- Les paramètres possibles pour tenir compte des différents scénarios
-- Les différentes réponses avec les codes de réponse correspondants qui ont un sens pour cet endpoint (ex: 404 : réponse d'erreur d'article inconnu)
-
-### Technlogies
-HTML, CSS, SASS, Javascript, Jquery, NodeJS, React, Github, Heroku, API, Swagger
-
-### Hébergement
-> Heroku
-[#Projet 13 - Argent Bank](https://google.fr/)
-
-
-# React Express Starter Pack
-> full stack apps with React and Express. Run your client and server with a single command. 
-[React, Redux, API, SCSS, Heroku, starter](https://github.com/GrimonprezAlexis/React-custom-starter)
+> Specification describing the APIs for transactions according to swagger YAML guidelines
+- The HTTP method (ex: GET, POST, etc..)
+- The route (ex: /store/inventory)
+- The description of what the endpoint corresponds to (ex: Return of the inventory of pets)
+- Possible settings to accommodate different scenarios
+- The different responses with the corresponding response codes that make sense for this endpoint (ex: 404: unknown article error response)
 
 ## Quick Start
 
-``` bash
+``` zsh
 # Install dependencies for server
 npm install
 
@@ -76,19 +57,10 @@ npm install
 npm run client-install
 
 # Run the client & server with concurrently
-npm run dev
-
-# Run the Express server only
-npm run server
+npm run dev:server
 
 # Run the React client only
-npm run client
+npm start
 
-# Server runs on http://localhost:5000 and client on http://localhost:3000
+# Server runs on http://localhost:3001 and client on http://localhost:3000
 ```
-
-### Author
-[Alexis GRIMONPREZ](grimonprez-alexis.herokuapp.com)
-
-### Version
-1.0.0
