@@ -7,4 +7,6 @@ Content-Type: application/json
 }
 ###
 
-get http://localhost:3001
+get http://localhost:3001/profile
+
+###

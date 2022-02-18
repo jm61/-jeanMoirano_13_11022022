@@ -21,6 +21,11 @@ const SignInForm = () => {
 
   useEffect(() => {
     if (token) {
+      const cb = document.querySelector('#remember-me')
+        if(cb.checked) {
+          const ls = localStorage.getItem('persist:root')
+          sessionStorage.setItem('root',ls)
+        }
       navigate('/profile')
     }
   }, [token, navigate])
