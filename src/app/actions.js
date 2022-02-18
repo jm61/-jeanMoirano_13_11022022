@@ -28,6 +28,13 @@ export const login = (email, password) => async (dispatch) => {
       headers: {'Content-type': 'application/json',}
     }
     const { data } = await axios.post(url, user, config)
+
+    /* const { data } = await fetch(url,{
+      method: 'POST',
+      headers: {'Content-type': 'application/json'},
+      body: JSON.stringify(user)
+      }  
+    ) */
   
       dispatch({ type: USER_LOGIN_SUCCESS, payload: data })
       dispatch(userProfile(data.body.token))
