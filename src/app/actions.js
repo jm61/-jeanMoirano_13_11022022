@@ -4,22 +4,21 @@ import {
     USER_LOGIN_SUCCESS,
     USER_LOGIN_FAIL,
     USER_LOGOUT,
-  } from './loginReducer'
-import {
     USER_PROFILE_SUCCESS,
     USER_PROFILE_FAIL,
     USER_PROFILE_RESET,
     USER_PROFILE_UPDATE,
-  } from './userReducer'
+  } from './_types'
 
  
 /**
  * @param {string} email 
  * @param {string} password 
- * @returns {JSX}
+ * @returns {object} payload token
  */
-export const login = (email, password) => async (dispatch) => {
+export const login = (email, password, rememberMe) => async (dispatch) => {
   try {
+    console.log({rememberMe})
     const url = 'http://localhost:3001/api/v1/user/login'
     const user = {email, password}
     const config = {
@@ -52,7 +51,7 @@ export const login = (email, password) => async (dispatch) => {
 
 /**
  * @param {string} token 
- * @returns {JSX}
+ * @returns {object} payload data
  */
 export const userProfile = token => async dispatch => {
   try {

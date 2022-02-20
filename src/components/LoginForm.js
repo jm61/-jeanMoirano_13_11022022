@@ -10,22 +10,17 @@ const SignInForm = () => {
 
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
-
+  const [rememberMe, setRememberMe] = useState(false)
   const { error } = useSelector((state) => state.userLogin)
   const { token } = useSelector((state) => state.userLogin)
-
+  const handleCheck = () => setRememberMe(!rememberMe)
   const submitHandler = (e) => {
     e.preventDefault()
-    dispatch(login(email, password))
+    dispatch(login(email, password, rememberMe))
   }
 
   useEffect(() => {
     if (token) {
-      const cb = document.querySelector('#remember-me')
-        if(cb.checked) {
-          const ls = localStorage.getItem('persist:root')
-          sessionStorage.setItem('root',ls)
-        }
       navigate('/profile')
     }
   }, [token, navigate])
@@ -34,7 +29,7 @@ const SignInForm = () => {
     <section className="sign-in-content">
       <i className="fa fa-user-circle sign-in-icon"></i>
       <h1>Sign In</h1>
-      <form onSubmit={submitHandler}>
+      <form onSubmit={submitHandler} autoComplete='true'>
         <div className="input-wrapper">
           <label htmlFor="username">Username</label>
           <input
@@ -54,7 +49,11 @@ const SignInForm = () => {
           />
         </div>
         <div className="input-remember">
-          <input type="checkbox" id="remember-me" />
+          <input 
+            type="checkbox"
+            id="remember-me"
+            checked={rememberMe}
+            onChange={handleCheck} />
           <label htmlFor="remember-me">Remember me</label>
         </div>
         <button className="sign-in-button" type="submit" name="Login">

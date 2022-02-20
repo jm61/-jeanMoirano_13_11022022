@@ -1,25 +1,34 @@
 import { createStore, applyMiddleware, combineReducers } from 'redux'
 import { composeWithDevTools } from '@redux-devtools/extension'
-import thunk from 'redux-thunk'
 import { loginReducer } from './loginReducer'
 import { userReducer } from './userReducer'
 import { persistStore, persistReducer } from 'redux-persist'
 import sessionStorage from 'redux-persist/lib/storage/session'
+import storage from 'redux-persist/lib/storage'
+import thunk from 'redux-thunk'
+import autoMergeLevel2 from 'redux-persist/lib/stateReconciler/autoMergeLevel2'
 
-const rootReducer = combineReducers({
-  userLogin: loginReducer,
-  userProfile: userReducer,
-})
+const rootPersistConfig = {
+  key: 'root',
+  storage: storage,
+  blacklist: ['auth'],
+  stateReconciler: autoMergeLevel2
+}
 
 const authPersistConfig = {
-  key: 'root',
+  key: 'auth',
   storage: sessionStorage,
 }
 
-const persistedReducer = persistReducer(authPersistConfig, rootReducer)
+const rootReducer = combineReducers({
+  userLogin: loginReducer,
+  userProfile: userReducer
+})
+
+const authdReducer = persistReducer(authPersistConfig, rootReducer)
 
 const store = createStore(
-  persistedReducer,
+  authdReducer,
   composeWithDevTools(applyMiddleware(thunk))
 )
 
